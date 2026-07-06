@@ -23,6 +23,16 @@ public class TestResult {
         return p1Weighting;
     }
     //Set method for static variables 
+    public static void setWeightings(double pw1, double pw2){
+        if (pw1 + pw2 == 1 ){
+            p1Weighting = pw1;
+            p2Weighting = pw2;
+                
+        }
+        p1Weighting = pw1;
+        p2Weighting = pw2;
+                
+    }
     
     public double getOverallScore(){
         return paper1 * p1Weighting + paper2 * p2Weighting;
