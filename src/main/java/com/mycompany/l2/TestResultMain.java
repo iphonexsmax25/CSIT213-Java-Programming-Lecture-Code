@@ -26,5 +26,8 @@ public class TestResultMain {
         // Change the weightings
         TestResult.setWeightings(0.4, 0.6);
         System.out.println(TestResult.getP1Weighting());
+        
+        System.out.println(tr1);
+        System.out.println(tr2);
     }
 }
