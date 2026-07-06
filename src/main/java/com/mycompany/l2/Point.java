@@ -15,7 +15,8 @@ public class Point {
     }
     
     public double getDistance(){
-        return 0;
+        double sumSq = x * x + y * y; 
+        return Math.sqrt(sumSq);
     }
     
      public double getDistance(Point other){
