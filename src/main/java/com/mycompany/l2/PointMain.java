@@ -12,5 +12,6 @@ public class PointMain {
         Point p3 =new Point (20,40);
         System.out.println(p1.getDistance());
         System.out.println(p1.getDistance(p3));
+        
     }
 }
