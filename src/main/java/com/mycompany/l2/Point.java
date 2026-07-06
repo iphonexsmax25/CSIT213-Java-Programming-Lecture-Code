@@ -9,6 +9,6 @@ package com.mycompany.l2;
  * @author limis
  */
 public class Point {
-    
+    private double x, y;
     
 }
