@@ -21,4 +21,22 @@ public class TestResult {
     public static double getP1Weighting(){
         return p1Weighting;
     }
+    
+    public double getOverallScore(){
+        return paper1 * p1Weighting + paper2 * p2Weighting;
+    }
+    
+    public String getGrade(){
+        double finalScore = getOverallScore();
+        if (finalScore >= 50){
+            return "Pass";
+        }
+        else{
+            return "Fail";
+        }
+    }
+    public String toString(){
+        return String.format();
+    }
 }
+
