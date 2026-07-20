@@ -15,7 +15,7 @@ public class AboutArrayList {
         
         // Use the get method + loop
         for(int i = 0;i < aList.size(); i++){
-            
+            System.out.println(aList.get(1));
         }
     }
 }
