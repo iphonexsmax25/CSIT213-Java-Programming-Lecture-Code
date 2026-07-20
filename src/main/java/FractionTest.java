@@ -5,11 +5,18 @@ public class FractionTest {
         testAddMethod();
         Fraction f1 = new Fraction(1, 10);
         changeIntstance(f1);
-        System.out.println(f1);
+        System.out.println(f1); // f1 is modified
+        Fraction f2 =   new Fraction(1,10);
+        changeReference(f2);
+        System.out.println(f2);
         
     }
     public static void changeIntstance(Fraction f){
         f.setNumerator(-1);
+    }
+    public static void changeReference(Fraction f){
+        f = new Fraction(-1, -10);
+        
     }
     public static void testAddMethod(){
         Fraction f1 = new Fraction(1,10);
