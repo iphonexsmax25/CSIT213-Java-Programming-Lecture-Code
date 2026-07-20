@@ -12,6 +12,11 @@ public class FractionTest {
         Fraction sum1 = f1.add(f2);
         System.out.println(sum1);
         System.out.println(f1.add(f3));
+        //Check that f1, f2 and f3 remain the same
+        System.out.println(f1);
+        System.out.println(f2);
+        System.out.println(f3);
+        
         
     }
     public static void testEquals(){
