@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class AboutArrayList {
     public static void main (String[] args){
         test1();
+        test2();
     }
     
     public static void test1(){
@@ -22,5 +23,17 @@ public class AboutArrayList {
         for (Object item : aList){
             System.out.println(item);
         }
+    }
+    public static void  test2(){
+        ArrayList<String> aList = new ArrayList<String>();
+        aList.add("First");
+        aList.add("Second");
+        aList.add("Third");
+        System.out.println(aList.size());
+        aList.remove(1);
+        for(String s : aList){
+            System.out.println(s);
+        }
+        
     }
 }
