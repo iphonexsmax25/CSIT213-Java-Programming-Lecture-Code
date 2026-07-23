@@ -9,7 +9,20 @@ public class AboutHashMap {
     public static void test2(){
         HashMap<String, Product> products = new HashMap<>();
         for (Product p :getsample()){
+            products.put(p.getCode(), p);
+        }
+        //Get all the keys
+        for (String pCode : products.keySet()){
+            System.out.println(pCode);
+        }
+        for ( Product p : products.values()){
             System.out.println(p);
+            
+        }
+        // USe the key (String) to get the value (Product Instance)
+        for (String pCode : products.keySet()){
+            Product prod = products.get(pCode);
+            System.out.println(pCode + " " + prod);
         }
         
     }
