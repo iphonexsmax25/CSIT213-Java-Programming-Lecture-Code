@@ -9,8 +9,28 @@ public class AboutHashMap {
         
     }
     public static void test3(){
-        HashMap<String, ArrayList<Product>> prodByCat = new HashMap<>();
+        HashMap<String, ArrayList<Product>> productByCat = new HashMap<>();
         ArrayList<Product> sample = getSample();
+        for (Product p : sample){
+            String category = p.getCategoary();
+            if (productByCat.containsKey(category)){
+                ArrayList<Product> currentList = productByCat.get(category);
+                currentList.add(p);
+            } else{
+                // New  entry
+                ArrayList<Product> newList = new ArrayList<>();
+                newList.add(p);
+                productByCat.put(category, newList);
+            }
+        }
+        //Access the Product instances in the HashMap
+        for(String category : productByCat.keySet()){
+            System.out.println(category);
+            ArrayList<Product> prods = productByCat.get(category);
+            for (Product p : prods){
+                System.out.println(p);
+            }
+        }
         
     }
     public static void test2(){
