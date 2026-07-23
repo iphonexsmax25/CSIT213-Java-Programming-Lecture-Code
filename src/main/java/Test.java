@@ -15,7 +15,7 @@ public class Test {
     public static void test1(){
         Circle c1 = new Circle(1);
         System.out.println(c1);
-        System.out.println(c1.getVolume());
+        
         
         //Cylinder 
         Cylinder cy1 = new Cylinder(1,10);

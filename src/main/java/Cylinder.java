@@ -18,4 +18,9 @@ public class Cylinder extends Circle{
         return height * getArea();
     }
     
+    @Override
+    public String toString(){
+        return String.format("Cylinder %.1f %.1f %.1f", height, getArea(), getVolume());
+    }
+    
 }
