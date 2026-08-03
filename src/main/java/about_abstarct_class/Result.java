@@ -24,6 +24,7 @@ public abstract class Result {
             return "Fail";
     }
     public String toString(){
-        return String.format("%s  %s %.1f %sS", test, candidate, getFinalScore(), getGrade());
+        String className = this.getClass().getSimpleName();
+        return String.format(" %s %s  %s %.1f %sS",className, test, candidate, getFinalScore(), getGrade());
     }
 }
