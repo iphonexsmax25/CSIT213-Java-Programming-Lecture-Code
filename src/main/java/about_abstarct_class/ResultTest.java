@@ -10,5 +10,10 @@ public class ResultTest {
         System.out.println(r1.getFinalScore());
         System.out.println(r1.getGrade());
         System.out.println(r1);
+        //
+        WrittenResult r2 = new WrittenResult("test 2", "c1", 50, 70);
+        System.out.println(r2.getFinalScore());
+        System.out.println(r2.getGrade());
+        System.out.println(r2);
     }
 }
