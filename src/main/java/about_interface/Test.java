@@ -10,6 +10,27 @@ package about_interface;
  */
 public class Test {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       DemoA a =new DemoA();
+       a.doWork();
+       // what instanceis it 
+       DemoI ref = new DemoA();
+       ref.doWork();
+       
+       ref = new DemoB();
+       ref.doWork();
+       
+       // Not applucable to class DemoC
+       DemoC c = new DemoC();
+       c.doWork();
+    // ref = c; // Error
+       
+       // Calling Method do something
+       doSomething(a);
+       doSomething(new DemoB());
+       // doSomething(c); // Error
     }
+    public static void doSomething(DemoI what){
+       what.doWork();
+    }
+    
 }
