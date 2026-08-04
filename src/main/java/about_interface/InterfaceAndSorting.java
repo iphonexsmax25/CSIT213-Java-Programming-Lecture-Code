@@ -31,6 +31,12 @@ public class InterfaceAndSorting {
          
     }
       public static void sortAll(Object[] data, ICompare comp){
+          for (int i = 0; i< data.length - 1; i++){
+              for (int curr = 0; curr < data.length - 1; curr++){
+                  Object currItem = data[curr];
+                  Object nextItem = data[curr + 1];
+              }
+          }
           
       }
     public static void sortNumber(int[] data){
