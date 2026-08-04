@@ -35,6 +35,10 @@ public class InterfaceAndSorting {
               for (int curr = 0; curr < data.length - 1; curr++){
                   Object currItem = data[curr];
                   Object nextItem = data[curr + 1];
+                  if (comp.compare(currItem, nextItem)){
+                      data[curr] = nextItem;
+                      data[curr + 1] = currItem;
+                  }
               }
           }
           
