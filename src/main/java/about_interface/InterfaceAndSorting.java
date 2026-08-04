@@ -9,8 +9,30 @@ public class InterfaceAndSorting {
         sortNumber(data);
         for (int value : data)
             System.out.print(value + " ");
-        System.out.println();        
+        System.out.println();  
+        //
+        Rectangle[] rects = {
+            new Rectangle(50, 40),
+            new Rectangle(20, 10),
+            new Rectangle(5, 1)
+        };
+         sortAll(rects, new RectCompare());
+         Fraction[] fracs = {
+            new Fraction(1, 2),
+            new Fraction(1, 3),
+            new Fraction(1, 4)
+        };
+        sortAll(fracs, new FracCompare());
+          //Verify results
+        for(Rectangle r: rects)
+            System.out.println(r);
+        for(Fraction f: fracs)
+            System.out.println(f);
+         
     }
+      public static void sortAll(Object[] data, ICompare comp){
+          
+      }
     public static void sortNumber(int[] data){
         // Bubble sort
         for (int i = 0; i < data.length - 1; i++ ){
