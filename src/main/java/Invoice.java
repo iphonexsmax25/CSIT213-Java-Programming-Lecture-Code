@@ -11,6 +11,18 @@ public class Invoice {
         this.hours = hours;
         this.rate = rate;
     }
+    
+    
+    public boolean equals(Object other){
+        if(other == null)
+            return false;
+        if(other instanceof Invoice == false)
+            return false;
+        Invoice temp = (Invoice)other;
+        return code.equalsIgnoreCase(temp.code);
+    }
+            
+            
     public String getCode(){ return code; }
     public int getHours(){ return hours; }
     public double getRate(){ return rate; }
