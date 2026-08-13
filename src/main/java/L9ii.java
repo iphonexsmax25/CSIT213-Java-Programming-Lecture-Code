@@ -9,6 +9,9 @@
 public class L9ii {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        saveInvoice("invoice_binary.txt");
+    }
+    public static void saveInvoice(String filename){
+        
     }
 }
