@@ -50,7 +50,7 @@ public class IntroFx extends Application
         }
     }
     public static void mmain(String[] args){
-        launch(); // STrat the application
+        launch(); // Start the application
     }
     
     
