@@ -11,7 +11,8 @@ import java.util.Random;
 
 
 
-public class NumberApp extends Application{
+public class NumberApp extends Application 
+        implements EventHandler<ActionEvent> {
     private TextField txGuess, txHint;
     private Button bnReset;
     private int secretNumber;
@@ -41,11 +42,17 @@ public class NumberApp extends Application{
         //Scene must go into a Sage
         topWin.setScene(onePage);
         topWin.show();
+        // Add event handler to TextField and Button
+        txGuess.setOnAction(this);
+        bnReset.setOnAction(this);
     }
     private void reset(){
         secretNumber = rNumber.nextInt(100);
         txGuess.setText("");
         txHint.setText("");
+    }
+    public void handle(ActionEvent e){
+        System.out.println(e.getSource());
     }
     public static void main(String[] args){
         launch();
