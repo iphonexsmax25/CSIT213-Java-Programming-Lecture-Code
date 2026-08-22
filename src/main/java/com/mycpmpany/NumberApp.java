@@ -60,7 +60,17 @@ public class NumberApp extends Application
         }
     }
     private void checkAnswer(){
-        
+        String inputStr = txGuess.getText();
+        int userGuess = Integer.parseInt(inputStr);
+        if (userGuess == secretNumber){
+            txHint.setText("Correct");
+        }
+        else if(userGuess > secretNumber){
+            txHint.setText("Too High");
+        }
+        else{
+            txHint.setText("Too Low");
+        }
     }    
     public static void main(String[] args){
         launch();
