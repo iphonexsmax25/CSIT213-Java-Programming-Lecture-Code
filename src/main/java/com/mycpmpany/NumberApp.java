@@ -52,8 +52,16 @@ public class NumberApp extends Application
         txHint.setText("");
     }
     public void handle(ActionEvent e){
-        System.out.println(e.getSource());
+        if(e.getSource() == txGuess){
+            checkAnswer();
+        } 
+        else {
+            reset();
+        }
     }
+    private void checkAnswer(){
+        
+    }    
     public static void main(String[] args){
         launch();
     }
