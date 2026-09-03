@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class PointMain {
     public static void main(String[] argv){
-        //testPoint();
-        //comparePoint();
+        testPoint();
+        comparePoint();
         compareArray();
     }
     public static void compareArray(){
